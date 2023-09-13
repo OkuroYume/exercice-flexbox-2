@@ -46,3 +46,64 @@ video {
 /* ====================================
 // base rules
 // ==================================== */
+
+.section {
+  display: flex;
+  margin: 10px;
+  background-color: #ebead2;
+  padding: 5px;
+}
+
+.box {
+  background-color: #fff;
+  margin: 5px;
+  padding: 5px 15px 5px 15px;
+  text-align: center;
+}
+
+.section-1 .box {
+  flex-grow: 1;
+}
+
+.section-2 .box {
+  width: calc(50% - 10px);
+}
+
+.section-2 {
+  flex-wrap: wrap;
+}
+
+.section-3 {
+  justify-content: center;
+}
+
+.section-4 .box {
+  width: calc(50% - 20px);
+  margin: 10px;
+}
+
+.section-4 {
+  flex-wrap: wrap;
+}
+
+.section-5 {
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.section-5 .box:nth-child(2) {
+  height: 80px;
+}
+
+.section-5 .box:nth-child(3) {
+  height: 40px;
+}
+
+.section-5 .box:nth-child(4) {
+  height: 120px;
+}
+
+.section-5 .box {
+  display: flex;
+  align-items: center;
+}
